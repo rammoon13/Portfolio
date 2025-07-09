@@ -4,7 +4,6 @@ import About from './sections/About'
 import Projects from './sections/Projects'
 import Experience from './sections/Experience'
 import Contact from './sections/Contact'
-import Extra from './sections/Extra'
 import './styles/app.css'
 
 // App muestra todas las secciones en una única página
@@ -17,7 +16,6 @@ function App() {
       <Projects />
       <Experience />
       <Contact />
-      <Extra />
     </Layout>
   )
 }

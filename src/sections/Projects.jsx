@@ -1,20 +1,23 @@
 import projects from '../data/projects.js'
-import Card from '../components/Card'
 import '../styles/projects.css'
 
-// Lista de proyectos destacados
+// Secci\u00f3n que muestra cada proyecto como un bloque amplio
 function Projects() {
   return (
     <section id="projects" className="projects">
       <h2>Proyectos</h2>
-      <div className="project-grid">
-        {projects.map((project) => (
-          <Card key={project.id} title={project.name} description={project.description}>
-            {/* Imagen de ejemplo */}
+      {projects.map((project) => (
+        <article key={project.id} className="project-item">
+          <div className="project-media">
             <img src={project.image} alt={project.name} />
-          </Card>
-        ))}
-      </div>
+          </div>
+          <div className="project-info">
+            <h3>{project.name}</h3>
+            <p>{project.description}</p>
+            <p className="tech">Tecnolog\u00edas: {project.technologies}</p>
+          </div>
+        </article>
+      ))
     </section>
   )
 }
