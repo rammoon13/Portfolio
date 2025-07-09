@@ -1,7 +1,7 @@
 import projects from '../data/projects.js'
 import '../styles/projects.css'
 
-// Secci\u00f3n que muestra cada proyecto como un bloque amplio
+// Sección que muestra cada proyecto como un bloque amplio
 function Projects() {
   return (
     <section id="projects" className="projects">
@@ -14,7 +14,7 @@ function Projects() {
           <div className="project-info">
             <h3>{project.name}</h3>
             <p>{project.description}</p>
-            <p className="tech">Tecnolog\u00edas: {project.technologies}</p>
+            <p className="tech">Tecnologías: {project.technologies}</p>
           </div>
         </article>
       ))}
