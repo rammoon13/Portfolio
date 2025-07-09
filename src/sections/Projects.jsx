@@ -2,15 +2,15 @@ import projects from '../data/projects.js'
 import Card from '../components/Card'
 import '../styles/projects.css'
 
-// Projects page showing a list of Project cards
+// Lista de proyectos destacados
 function Projects() {
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       <h2>Proyectos</h2>
       <div className="project-grid">
         {projects.map((project) => (
           <Card key={project.id} title={project.name} description={project.description}>
-            {/* Example image usage */}
+            {/* Imagen de ejemplo */}
             <img src={project.image} alt={project.name} />
           </Card>
         ))}

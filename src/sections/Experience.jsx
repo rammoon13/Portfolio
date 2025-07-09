@@ -1,10 +1,10 @@
 import experiences from '../data/experiences.js'
 import '../styles/experience.css'
 
-// Experience page displaying a timeline of jobs
+// Cronolog\u00eda de mi experiencia profesional
 function Experience() {
   return (
-    <section className="experience">
+    <section id="experience" className="experience">
       <h2>Experiencia</h2>
       <ul className="timeline">
         {experiences.map((exp) => (

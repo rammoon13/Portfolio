@@ -1,10 +1,11 @@
 import '../styles/contact.css'
 
-// Contact page with a basic form (design only)
+// Formulario de contacto de ejemplo (solo dise\u00f1o)
 function Contact() {
   return (
-    <section className="contact">
+    <section id="contact" className="contact">
       <h2>Contacto</h2>
+      <p>Ram\u00f3n Herrera Robles &ndash; ramon.herrera@example.com</p>
       <form>
         <label>
           Nombre
@@ -18,7 +19,7 @@ function Contact() {
           Mensaje
           <textarea name="message" rows="4" />
         </label>
-        {/* Submit button does not do anything yet */}
+        {/* Bot\u00f3n sin funcionalidad real */}
         <button type="submit">Enviar</button>
       </form>
     </section>

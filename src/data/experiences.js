@@ -1,18 +1,25 @@
-// Mock data for work experience timeline
+// Experiencia profesional real resumida
 const experiences = [
   {
     id: 1,
-    role: 'Frontend Developer',
-    company: 'Empresa A',
-    period: '2022 - Presente',
-    description: 'Desarrollé interfaces modernas y responsivas.',
+    role: 'Desarrollador',
+    company: 'Controlnet',
+    period: '2022 - 2024',
+    description: 'Desarrollo de aplicaciones a medida y mantenimiento de proyectos empresariales.',
   },
   {
     id: 2,
-    role: 'Web Designer',
-    company: 'Empresa B',
-    period: '2020 - 2022',
-    description: 'Diseñé sitios web atractivos y accesibles.',
+    role: 'Profesor aula matinal',
+    company: 'Centro educativo',
+    period: '1 mes',
+    description: 'Atenci\u00f3n y actividades educativas con ni\u00f1os.',
+  },
+  {
+    id: 3,
+    role: 'Entrenador y jugador de baloncesto',
+    company: 'Clubes locales',
+    period: '2008 - 2023',
+    description: 'Compagin\u00e9 labores de entrenamiento con competici\u00f3n regional.',
   },
 ]
 
