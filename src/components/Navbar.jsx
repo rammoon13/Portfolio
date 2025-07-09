@@ -12,7 +12,6 @@ function Navbar() {
         <li><a href="#projects">Proyectos</a></li>
         <li><a href="#experience">Experiencia</a></li>
         <li><a href="#contact">Contacto</a></li>
-        <li><a href="#extra">Extra</a></li>
       </ul>
     </nav>
   )

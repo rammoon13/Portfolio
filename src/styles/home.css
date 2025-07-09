@@ -1,7 +1,13 @@
-/* Home page styles */
+/* Estilos para la secci\u00f3n de inicio */
 .home {
   text-align: center;
   padding: 4rem 0;
+}
+
+.tagline {
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  color: #555;
 }
 
 @media (max-width: 600px) {

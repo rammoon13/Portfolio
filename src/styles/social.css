@@ -1,0 +1,17 @@
+/* Iconos de redes sociales */
+.social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social img {
+  width: 32px;
+  height: 32px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.social img:hover {
+  filter: none;
+}

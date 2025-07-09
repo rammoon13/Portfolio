@@ -1,27 +1,16 @@
+import SocialLinks from '../components/SocialLinks'
 import '../styles/contact.css'
 
-// Formulario de contacto de ejemplo (solo dise\u00f1o)
+// Secci\u00f3n de contacto con enlaces directos a redes sociales
 function Contact() {
   return (
     <section id="contact" className="contact">
       <h2>Contacto</h2>
-      <p>Ram\u00f3n Herrera Robles &ndash; ramon.herrera@example.com</p>
-      <form>
-        <label>
-          Nombre
-          <input type="text" name="name" />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" />
-        </label>
-        <label>
-          Mensaje
-          <textarea name="message" rows="4" />
-        </label>
-        {/* Bot\u00f3n sin funcionalidad real */}
-        <button type="submit">Enviar</button>
-      </form>
+      <p>
+        Puedes escribirme a{' '}
+        <a href="mailto:ramon.herrera@example.com">ramon.herrera@example.com</a>
+      </p>
+      <SocialLinks />
     </section>
   )
 }

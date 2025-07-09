@@ -1,16 +1,12 @@
+import SocialLinks from './SocialLinks'
 import '../styles/footer.css'
 
-// Simple footer with social media links
+// Pie de p\u00e1gina sencillo con enlaces a redes sociales
 function Footer() {
   return (
     <footer className="footer">
-      <p>&copy; 2024 Mi Portfolio</p>
-      <div className="social-links">
-        {/* Replace '#' with your social links */}
-        <a href="#" aria-label="Twitter">Twitter</a>
-        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-        <a href="#" aria-label="GitHub">GitHub</a>
-      </div>
+      <p>&copy; 2024 Ram\u00f3n Herrera Robles</p>
+      <SocialLinks />
     </footer>
   )
 }
