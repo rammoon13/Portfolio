@@ -1,0 +1,54 @@
+/* Estilos para la sección de proyectos */
+
+/* Contenedor principal que agrupa todos los proyectos */
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+/* Cada proyecto se muestra como un bloque completo */
+.project-block {
+  margin: 0 0 2rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-block h3 {
+  margin-top: 0;
+}
+
+/* Lista de tecnologías utilizadas como badges */
+.project-tech {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.project-tech li {
+  background-color: #ececec;
+  border-radius: 4px;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.875rem;
+}
+
+/* Imágenes y vídeos ocupan todo el ancho y tienen bordes redondeados */
+.project-image,
+.project-video {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+/* Ajustes básicos para pantallas pequeñas */
+@media (max-width: 600px) {
+  .project-block {
+    padding: 1rem;
+  }
+}
