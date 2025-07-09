@@ -17,7 +17,7 @@ function Projects() {
             <p className="tech">Tecnolog\u00edas: {project.technologies}</p>
           </div>
         </article>
-      ))
+      ))}
     </section>
   )
 }
