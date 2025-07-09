@@ -8,7 +8,7 @@ function Contact() {
       <h2>Contacto</h2>
       <p>
         Puedes escribirme a{' '}
-        <a href="mailto:ramon.herrera@example.com">ramon.herrera@example.com</a>
+        <a href="mailto:herreraroblesramon@gmail.com">herreraroblesramon@gmail.com</a>
       </p>
       <SocialLinks />
     </section>

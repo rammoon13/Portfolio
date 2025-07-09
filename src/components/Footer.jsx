@@ -5,8 +5,7 @@ import '../styles/footer.css'
 function Footer() {
   return (
     <footer className="footer">
-      <p>&copy; 2024 Ram\u00f3n Herrera Robles</p>
-      <SocialLinks />
+      <p>&copy; 2025 Ramón Herrera Robles - React</p>
     </footer>
   )
 }

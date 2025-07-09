@@ -4,7 +4,7 @@ const experiences = [
     id: 1,
     role: 'Desarrollador',
     company: 'Controlnet',
-    period: '2022 - 2024',
+    period: 'Feb 2024 - Jun 2025',
     description: 'Desarrollo de software a medida con .NET, MySQL y MudBlazor.',
   },
   {

@@ -7,13 +7,13 @@ import '../styles/social.css'
 function SocialLinks() {
   return (
     <div className="social">
-      <a href="https://github.com/ramonherrerar" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/rammoon13" target="_blank" rel="noopener noreferrer">
         <img src={githubIcon} alt="GitHub" />
       </a>
-      <a href="https://www.linkedin.com/in/ramonherrerar" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/in/ramon-herrera-robles/" target="_blank" rel="noopener noreferrer">
         <img src={linkedinIcon} alt="LinkedIn" />
       </a>
-      <a href="https://instagram.com/ramonherrerar" target="_blank" rel="noopener noreferrer">
+      <a href="https://instagram.com/rammoon13" target="_blank" rel="noopener noreferrer">
         <img src={instagramIcon} alt="Instagram" />
       </a>
     </div>
