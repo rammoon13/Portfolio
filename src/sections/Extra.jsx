@@ -1,10 +1,10 @@
 import hobbies from '../data/hobbies.js'
 import '../styles/extra.css'
 
-// Extra page for personal hobbies
+// Secci\u00f3n con mis pasiones personales
 function Extra() {
   return (
-    <section className="extra">
+    <section id="extra" className="extra">
       <h2>Universo Personal</h2>
       <div className="hobby-grid">
         {hobbies.map((hobby) => (

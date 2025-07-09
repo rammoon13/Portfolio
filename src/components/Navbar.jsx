@@ -1,20 +1,18 @@
-import { Link } from 'react-router-dom'
 import '../styles/navbar.css'
 
-// Navbar component displayed on all pages
+// Barra de navegación fija con enlaces a cada sección
 function Navbar() {
   return (
     <nav className="navbar">
       <h1 className="navbar-title">Mi Portfolio</h1>
       <ul className="navbar-links">
-        {/* Links to different sections */}
-        <li><Link to="/">Inicio</Link></li>
-        <li><Link to="/about">Sobre mí</Link></li>
-        <li><Link to="/projects">Proyectos</Link></li>
-        <li><Link to="/experience">Experiencia</Link></li>
-        <li><Link to="/blog">Blog</Link></li>
-        <li><Link to="/contact">Contacto</Link></li>
-        <li><Link to="/extra">Extra</Link></li>
+        {/* Enlaces que realizan scroll a las secciones */}
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#contact">Contacto</a></li>
+        <li><a href="#extra">Extra</a></li>
       </ul>
     </nav>
   )

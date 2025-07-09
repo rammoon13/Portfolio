@@ -1,7 +1,7 @@
 import Navbar from './Navbar'
 import Footer from './Footer'
 
-// Layout wraps pages with Navbar and Footer
+// Layout que envuelve las secciones con la cabecera y el pie de página
 function Layout({ children }) {
   return (
     <>
