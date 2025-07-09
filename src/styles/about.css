@@ -1,0 +1,18 @@
+/* About page styles */
+.about {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+@media (max-width: 800px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+}
