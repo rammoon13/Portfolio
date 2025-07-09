@@ -7,9 +7,9 @@ function About() {
     <section id="about" className="about">
       <img src={profileImg} alt="Mi foto" />
       <div>
-        <h2>Sobre m\u00ed</h2>
+        <h2>Sobre mi</h2>
         <p>
-          Ram\u00f3n Herrera Robles, desarrollador full stack con formaci\u00f3n en DAM
+          Ramón Herrera Robles, desarrollador full stack con formación en DAM
           y experiencia en software, videojuegos y proyectos web empresariales.
           Apasionado por el anime, el deporte, la creatividad y el crecimiento personal.
         </p>
@@ -19,7 +19,7 @@ function About() {
           <li>React y Blazor</li>
           <li>C# y Unity</li>
           <li>Python</li>
-          <li>MySQL, Git y dise\u00f1o UI/UX</li>
+          <li>MySQL, Git y diseño UI/UX</li>
         </ul>
       </div>
     </section>
