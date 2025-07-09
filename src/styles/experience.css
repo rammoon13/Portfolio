@@ -1,0 +1,9 @@
+/* Timeline list styles */
+.timeline {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline li {
+  margin-bottom: 1.5rem;
+}
