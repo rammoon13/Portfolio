@@ -38,12 +38,17 @@
   font-size: 0.875rem;
 }
 
-/* Imágenes y vídeos ocupan todo el ancho y tienen bordes redondeados */
+.project-long-description p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
 .project-image,
 .project-video {
   width: 100%;
-  border-radius: 8px;
   margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 /* Ajustes básicos para pantallas pequeñas */
