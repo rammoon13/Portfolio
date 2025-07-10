@@ -9,6 +9,7 @@ function Navbar() {
         {/* Enlaces que realizan scroll a las secciones */}
         <li><a href="#home">Inicio</a></li>
         <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#education">Estudios</a></li>
         <li><a href="#projects">Proyectos</a></li>
         <li><a href="#experience">Experiencia</a></li>
         <li><a href="#contact">Contacto</a></li>

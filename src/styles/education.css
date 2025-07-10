@@ -1,0 +1,13 @@
+.education-section {
+  padding: 2rem 0;
+}
+
+.education-section ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.education-section li {
+  margin-bottom: 0.5rem;
+}

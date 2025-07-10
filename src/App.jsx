@@ -1,6 +1,7 @@
 import Layout from './components/Layout'
 import Home from './sections/Home'
 import About from './sections/About'
+import Education from './sections/Education'
 import Projects from './sections/Projects'
 import Experience from './sections/Experience'
 import Contact from './sections/Contact'
@@ -13,6 +14,7 @@ function App() {
       {/* Cada sección se renderiza de forma secuencial */}
       <Home />
       <About />
+      <Education />
       <Projects />
       <Experience />
       <Contact />

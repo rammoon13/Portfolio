@@ -1,5 +1,7 @@
 import projects from '../data/projects.js'
 import ImageSlider from '../components/ImageSlider'
+import androidIcon from '../assets/icons/android.svg'
+import windowsIcon from '../assets/icons/windows.svg'
 import '../styles/Projects.css'
 
 function Projects() {
@@ -78,11 +80,13 @@ function Projects() {
             <div className="project-downloads">
               {project.apk && (
                 <a href={project.apk} className="download-button" download>
+                  <img src={androidIcon} alt="Android" />
                   Descargar APK
                 </a>
               )}
               {project.exe && (
                 <a href={project.exe} className="download-button" download>
+                  <img src={windowsIcon} alt="Windows" />
                   Descargar EXE
                 </a>
               )}
