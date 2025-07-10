@@ -45,10 +45,14 @@
 
 .project-image,
 .project-video {
-  width: 100%;
+  width: 70%;
   margin-top: 1rem;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  /* Asegura que las imagenes y el video se colocan en el centro del contenerdor */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Ajustes básicos para pantallas pequeñas */
@@ -56,4 +60,44 @@
   .project-block {
     padding: 1rem;
   }
+}
+
+.project-title {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.project-title-icon {
+  height: 5rem;
+  width: 5rem;
+  object-fit: contain;
+}
+
+.project-downloads {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.download-button {
+  background-color: #2d88ff;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.download-button:hover {
+  background-color: #1a6edb;
 }
