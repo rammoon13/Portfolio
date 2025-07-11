@@ -74,11 +74,25 @@ En un futuro me gustaría añadir monedas, una tienda interna, conexión a base 
   {
     id: 3,
     title: 'Sistema Cine',
-    icon: '/assets/pixelball_icon.png',
+    icon: '/assets/cine_icon.png',
     description:
-      'Plataforma web para reservas y gestión de butacas en salas de cine. Backend robusto y panel de administración.',
-    technologies: ['Blazor', '.NET', 'MySQL'],
-    images: ['/vite.svg'],
+      'Aplicación web para gestionar reservas de butacas, sesiones y películas, con panel administrativo y control por roles.',
+
+    longDescription: `
+      Sistema Cine es una plataforma web desarrollada con Blazor y .NET, pensada para la gestión integral de proyecciones en salas de cine. Permite a los usuarios explorar películas en cartelera, seleccionar sesión, elegir butacas disponibles en tiempo real y confirmar su reserva desde una interfaz clara y accesible.
+
+      El sistema implementa control de usuarios con login y asignación de roles diferenciados: los clientes pueden registrarse y reservar, mientras que los administradores acceden a un panel completo donde gestionan películas, salas, horarios y usuarios, todo con operaciones CRUD. Cada película se asocia a múltiples sesiones y cada sesión a una sala concreta con su distribución de butacas. Las reservas bloquean butacas para evitar solapamientos.
+
+      La arquitectura sigue un enfoque modular, con separación entre lógica de negocio, servicios e interfaces. El acceso a datos se gestiona con Entity Framework y una base de datos MySQL, con migraciones automáticas y validaciones a nivel de modelo. Las relaciones entre entidades están bien normalizadas, y el backend es completamente escalable.
+
+      La experiencia de usuario ha sido prioridad desde el diseño: el selector de butacas se actualiza en tiempo real, las rutas están protegidas por autenticación y la navegación es fluida. También incorpora manejo de errores, alertas visuales, y confirmación de reserva.
+
+      Aunque fue creado como proyecto formativo, su estructura y funcionalidad están preparadas para usarse en entornos reales, como salas pequeñas, festivales o asociaciones culturales. Está listo para evolucionar hacia pagos en línea, generación de QR y gestión estadística de ocupación.
+
+      En definitiva, este proyecto demuestra mi capacidad para desarrollar soluciones completas y funcionales, desde la base de datos hasta la experiencia del usuario final.
+    `,
+
+    technologies: ['Blazor', '.NET', 'MySQL', 'Entity Framework'],
   },
 ]
 
