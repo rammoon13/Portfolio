@@ -1,17 +1,66 @@
-/* Estilos para la secci\u00f3n de inicio */
+/* Estilos para la sección de inicio */
 .home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
+  color: #1a1a1a;
   text-align: center;
-  padding: 4rem 0;
+}
+
+.home-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.home-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: #555;
+  animation: fadeInUp 1s ease forwards;
 }
 
 .tagline {
-  margin-bottom: 1.5rem;
-  font-weight: bold;
-  color: #555;
+  font-size: 1.1rem;
+  font-style: italic;
+  max-width: 700px;
+  color: #777;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+/* Animación suave de aparición */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 600px) {
   .home {
-    padding: 2rem 0;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .home-title {
+    font-size: 2.4rem;
+  }
+
+  .home-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
   }
 }
