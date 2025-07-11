@@ -7,24 +7,24 @@ function About() {
     <section id="about" className="about">
       <img src={profileImg} alt="Foto de Ramón Herrera Robles" />
       <div>
-        <h2>Sobre mí</h2>
-        <p>
+        <h2 className="fade-slide">Sobre mí</h2>
+        <p className="fade-slide">
           Soy Ramón Herrera Robles, desarrollador full stack y creador indie con alma de jugador. Titulado en
           Desarrollo de Aplicaciones Multiplataforma (DAM), llevo años combinando el código con la narrativa,
           los sistemas empresariales con la estética anime, y el entrenamiento físico con la gamificación.
         </p>
-        <p>
+        <p className="fade-slide">
           Me apasiona construir experiencias con propósito. Desde gestionar software empresarial con
           <strong> Spring y .NET</strong> hasta diseñar videojuegos en <strong>Unity</strong>, mi misión es siempre
           la misma: crear algo que deje huella. Como exentrenador de baloncesto, sé lo que es liderar, trabajar en equipo
           y sacar lo mejor de cada uno — incluso en las partidas más difíciles.
         </p>
-        <p>
+        <p className="fade-slide">
           Busco oportunidades que me reten, me enseñen y me permitan seguir creciendo como profesional y como persona.
           Porque para mí, desarrollar no es un trabajo: es un camino.
         </p>
 
-        <ul>
+        <ul className="fade-slide">
           <li><h3>Lenguajes de Programación</h3></li>
           <ul>
             <li>Java · C# · Python · JavaScript · HTML/CSS</li>

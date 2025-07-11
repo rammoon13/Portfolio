@@ -5,8 +5,8 @@ import '../styles/contact.css'
 function Contact() {
   return (
     <section id="contact" className="contact">
-      <h2>Contacto</h2>
-      <p>
+      <h2 className="fade-slide">Contacto</h2>
+      <p className="fade-slide">
         Puedes escribirme a{' '}
         <a href="mailto:herreraroblesramon@gmail.com">herreraroblesramon@gmail.com</a>
       </p>

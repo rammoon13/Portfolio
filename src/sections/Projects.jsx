@@ -18,8 +18,8 @@ function Projects() {
         const mid = Math.floor(paragraphs.length / 2)
 
         return (
-          <article key={project.id} className="project-block">
-            <h3 className="project-title">
+          <article key={project.id} className="project-block fade-slide">
+            <h3 className="project-title fade-slide">
               {project.icon && (
                 <img
                   src={project.icon}
@@ -31,10 +31,12 @@ function Projects() {
             </h3>
             {/* Si hay descripción larga, dividirla en 2 y meter el slider en medio */}
             {project.longDescription ? (
-              <div className="project-long-description">
+              <div className="project-long-description fade-slide">
                 {/* Primera mitad del texto */}
                 {paragraphs.slice(0, mid).map((paragraph, index) => (
-                  <p key={`p1-${index}`}>{paragraph.trim()}</p>
+                  <p key={`p1-${index}`} className="fade-slide">
+                    {paragraph.trim()}
+                  </p>
                 ))}
 
                 {/* Slider de imágenes embebido */}
@@ -44,15 +46,17 @@ function Projects() {
 
                 {/* Segunda mitad del texto */}
                 {paragraphs.slice(mid).map((paragraph, index) => (
-                  <p key={`p2-${index}`}>{paragraph.trim()}</p>
+                  <p key={`p2-${index}`} className="fade-slide">
+                    {paragraph.trim()}
+                  </p>
                 ))}
               </div>
             ) : (
-              <p>{project.description}</p>
+              <p className="fade-slide">{project.description}</p>
             )}
 
             {/* Tecnologías en badges */}
-            <ul className="project-tech">
+            <ul className="project-tech fade-slide">
               {project.technologies.map((tech, index) => (
                 <li key={index}>{tech}</li>
               ))}
@@ -66,18 +70,18 @@ function Projects() {
                   key={idx}
                   src={img}
                   alt={`${project.title} captura ${idx + 1}`}
-                  className="project-image"
+                  className="project-image fade-slide"
                 />
               ))}
 
             {/* Vídeo del proyecto, opcional */}
             {project.video && (
-              <video controls className="project-video">
+              <video controls className="project-video fade-slide">
                 <source src={project.video} type="video/mp4" />
                 Tu navegador no soporta el vídeo.
               </video>
             )}
-            <div className="project-downloads">
+            <div className="project-downloads fade-slide">
               {project.apk && (
                 <a href={project.apk} className="download-button" download>
                   <img src={androidIcon} alt="Android" />
