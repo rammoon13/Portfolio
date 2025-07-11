@@ -5,10 +5,10 @@ import '../styles/experience.css'
 function Experience() {
   return (
     <section id="experience" className="experience">
-      <h2>Experiencia</h2>
+      <h2 className="fade-slide">Experiencia</h2>
       <ul className="timeline">
         {experiences.map((exp) => (
-          <li key={exp.id}>
+          <li key={exp.id} className="fade-slide">
             <h3>{exp.role} - {exp.company}</h3>
             <span>{exp.period}</span>
             <p>{exp.description}</p>
