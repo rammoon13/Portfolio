@@ -4,7 +4,7 @@ import '../styles/navbar.css'
 function Navbar() {
   return (
     <nav className="navbar">
-      <h1 className="navbar-title">Mi Portfolio</h1>
+      <h1 className="navbar-title"></h1>
       <ul className="navbar-links">
         {/* Enlaces que realizan scroll a las secciones */}
         <li><a href="#home">Inicio</a></li>

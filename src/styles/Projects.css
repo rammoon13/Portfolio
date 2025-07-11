@@ -1,6 +1,5 @@
 /* Estilos para la sección de proyectos */
 
-/* Contenedor principal que agrupa todos los proyectos */
 .projects-section {
   display: flex;
   flex-direction: column;
@@ -8,20 +7,42 @@
   padding: 1rem 0;
 }
 
-/* Cada proyecto se muestra como un bloque completo */
+/* Cada proyecto se muestra como un bloque translúcido y con buen contraste */
 .project-block {
   margin: 0 0 2rem;
   padding: 1.5rem;
-  background-color: #fff;
+  background-color: rgba(20, 20, 20, 0.55); /* Gris muy oscuro translúcido */
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Sombra intensa para destacar sobre fondo */
+  color: #f0f0f0; /* Texto claro para buen contraste */
+  backdrop-filter: blur(6px); /* Suaviza fondo detrás */
 }
 
-.project-block h3 {
-  margin-top: 0;
+/* Títulos de los proyectos */
+.project-title {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
 }
 
-/* Lista de tecnologías utilizadas como badges */
+.project-title-icon {
+  height: 5rem;
+  width: 5rem;
+  object-fit: contain;
+}
+
+/* Descripción detallada */
+.project-long-description p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #ddd; /* Gris claro legible */
+}
+
+/* Lista de tecnologías como badges */
 .project-tech {
   list-style: none;
   display: flex;
@@ -32,56 +53,32 @@
 }
 
 .project-tech li {
-  background-color: #ececec;
+  background-color: #333; /* Fondo oscuro para integrarse */
+  color: #ddd;
   border-radius: 4px;
   padding: 0.25rem 0.6rem;
   font-size: 0.875rem;
 }
 
-.project-long-description p {
-  margin-bottom: 1rem;
-  line-height: 1.6;
-}
-
+/* Imágenes y vídeos del proyecto */
 .project-image,
 .project-video {
   width: 70%;
   margin-top: 1rem;
   border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  /* Asegura que las imagenes y el video se colocan en el centro del contenerdor */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Ajustes básicos para pantallas pequeñas */
-@media (max-width: 600px) {
-  .project-block {
-    padding: 1rem;
-  }
-}
-
-.project-title {
-  font-size: 2rem;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
-}
-
-.project-title-icon {
-  height: 5rem;
-  width: 5rem;
-  object-fit: contain;
-}
-
+/* Botones de descarga */
 .project-downloads {
   margin-top: 1rem;
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .download-button {
@@ -95,9 +92,6 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .download-button img {
@@ -107,4 +101,16 @@
 
 .download-button:hover {
   background-color: #1a6edb;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .project-block {
+    padding: 1rem;
+  }
+
+  .project-image,
+  .project-video {
+    width: 100%;
+  }
 }

@@ -3,15 +3,17 @@
   display: flex;
   gap: 1rem;
   justify-content: center;
+  margin-top: 1rem;
 }
 
-.social img {
+.social-icon svg {
+  fill: white;
+  transition: fill 0.3s ease, transform 0.3s ease;
   width: 32px;
   height: 32px;
-  filter: grayscale(100%);
-  transition: filter 0.3s ease;
 }
 
-.social img:hover {
-  filter: none;
+.social-icon:hover svg {
+  fill: #00ffff;
+  transform: scale(1.1);
 }

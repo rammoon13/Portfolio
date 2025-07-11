@@ -58,3 +58,28 @@
     font-size: 1rem;
   }
 }
+
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 20px;
+  animation: bounce 1.6s infinite;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.down-icon {
+  stroke: #00ffff;
+  stroke-width: 3;
+  height: 36px;
+  width: 36px;
+}
+
+/* Rebote animado */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}

@@ -1,20 +1,25 @@
-import githubIcon from '../assets/github.svg'
-import linkedinIcon from '../assets/linkedin.svg'
-import instagramIcon from '../assets/instagram.svg'
 import '../styles/social.css'
 
 // Componente que muestra los enlaces a mis redes sociales
 function SocialLinks() {
   return (
     <div className="social">
-      <a href="https://github.com/rammoon13" target="_blank" rel="noopener noreferrer">
-        <img src={githubIcon} alt="GitHub" />
+      <a href="https://github.com/rammoon13" target="_blank" rel="noopener noreferrer" className="social-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 24 24">
+          <path d="M12 .5a11.5 11.5 0 00-3.63 22.42c.57.1.78-.25.78-.55v-2.1c-3.19.69-3.86-1.54-3.86-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.74 2.68 1.23 3.33.94.1-.74.4-1.23.73-1.51-2.55-.29-5.24-1.27-5.24-5.65 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.15 1.18a10.9 10.9 0 015.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.57.23 2.73.11 3.02.73.8 1.18 1.83 1.18 3.08 0 4.39-2.7 5.36-5.27 5.64.41.35.78 1.03.78 2.09v3.1c0 .3.21.66.79.55A11.5 11.5 0 0012 .5z" />
+        </svg>
       </a>
-      <a href="https://www.linkedin.com/in/ramon-herrera-robles/" target="_blank" rel="noopener noreferrer">
-        <img src={linkedinIcon} alt="LinkedIn" />
+
+      <a href="https://www.linkedin.com/in/ramon-herrera-robles/" target="_blank" rel="noopener noreferrer" className="social-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 24 24">
+          <path d="M4.98 3.5a2.5 2.5 0 11-.01 5.01A2.5 2.5 0 014.98 3.5zM2 9h6v12H2zm7.5 0h5.4v1.7h.1c.76-1.3 2.63-2.6 5.4-2.6 5.78 0 6.8 3.8 6.8 8.7V21H22v-4.9c0-2.2 0-5-3-5s-3.4 2.4-3.4 4.8V21h-6z" />
+        </svg>
       </a>
-      <a href="https://instagram.com/rammoon13" target="_blank" rel="noopener noreferrer">
-        <img src={instagramIcon} alt="Instagram" />
+
+      <a href="https://instagram.com/rammoon13" target="_blank" rel="noopener noreferrer" className="social-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 24 24">
+          <path d="M12 2.2c3.2 0 3.6.01 4.8.07 1.17.06 1.95.25 2.4.42a4.8 4.8 0 011.75 1.15 4.8 4.8 0 011.15 1.75c.17.45.36 1.23.42 2.4.06 1.2.07 1.6.07 4.8s-.01 3.6-.07 4.8c-.06 1.17-.25 1.95-.42 2.4a4.8 4.8 0 01-1.15 1.75 4.8 4.8 0 01-1.75 1.15c-.45.17-1.23.36-2.4.42-1.2.06-1.6.07-4.8.07s-3.6-.01-4.8-.07c-1.17-.06-1.95-.25-2.4-.42a4.8 4.8 0 01-1.75-1.15 4.8 4.8 0 01-1.15-1.75c-.17-.45-.36-1.23-.42-2.4C2.2 15.6 2.2 15.2 2.2 12s.01-3.6.07-4.8c.06-1.17.25-1.95.42-2.4a4.8 4.8 0 011.15-1.75A4.8 4.8 0 015.59 2.7c.45-.17 1.23-.36 2.4-.42C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.17 0-3.54.01-4.78.07-1.06.05-1.64.22-2.03.36a3.12 3.12 0 00-1.15.75 3.12 3.12 0 00-.75 1.15c-.14.39-.31.97-.36 2.03-.06 1.24-.07 1.61-.07 4.78s.01 3.54.07 4.78c.05 1.06.22 1.64.36 2.03.16.44.37.82.75 1.15.33.38.71.59 1.15.75.39.14.97.31 2.03.36 1.24.06 1.61.07 4.78.07s3.54-.01 4.78-.07c1.06-.05 1.64-.22 2.03-.36.44-.16.82-.37 1.15-.75.38-.33.59-.71.75-1.15.14-.39.31-.97.36-2.03.06-1.24.07-1.61.07-4.78s-.01-3.54-.07-4.78c-.05-1.06-.22-1.64-.36-2.03a3.12 3.12 0 00-.75-1.15 3.12 3.12 0 00-1.15-.75c-.39-.14-.97-.31-2.03-.36-1.24-.06-1.61-.07-4.78-.07zm0 3.8a5.2 5.2 0 110 10.4 5.2 5.2 0 010-10.4zm0 1.8a3.4 3.4 0 100 6.8 3.4 3.4 0 000-6.8zm5.4-1.9a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" />
+        </svg>
       </a>
     </div>
   )
