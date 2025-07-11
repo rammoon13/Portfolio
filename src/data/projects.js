@@ -39,12 +39,37 @@ En un futuro me gustaría añadir monedas, una tienda interna, conexión a base 
   {
     id: 2,
     title: 'EZPOS',
-    icon: '/assets/pixelball_icon.png',
+    icon: '/assets/iconoezpos.png',
     description:
-      'Aplicación móvil para asociaciones y eventos. Permite gestionar ventas y productos de forma ágil.',
-    technologies: ['Java', 'Android Studio', 'SQLite', 'GitHub'],
-    images: ['/vite.svg'],
-    // video: '/assets/ezpos_demo.mp4',
+      'Aplicación móvil para asociaciones y eventos. Permite gestionar productos, ventas y turnos desde el teléfono.',
+    longDescription: `
+      EZPOS es una aplicación Android desarrollada para facilitar la gestión de productos, ventas y usuarios en eventos y asociaciones pequeñas o medianas. Su objetivo es claro: ofrecer un sistema POS (punto de venta) rápido, intuitivo y autónomo que funcione sin necesidad de conexión a internet.
+
+      Su interfaz está diseñada pensando en la usabilidad: desde el primer vistazo se pueden registrar ventas, añadir productos o consultar resúmenes de ingresos. Las operaciones se ejecutan con pocos toques, y los botones están optimizados para entornos de alto movimiento como ferias o reuniones con gran afluencia.
+
+      El backend está implementado en SQLite, lo que permite una persistencia local y estable de los datos. Las tablas se gestionan con lógica robusta y validaciones preventivas para evitar errores comunes como duplicados o ventas sin stock. Cada módulo (productos, ventas, categorías, usuarios, etc.) está dividido por clases separadas con adaptadores y modelos bien definidos.
+
+      El diseño UI sigue las guías de Material Design, con colores intuitivos, menús claros y navegación fluida. Además, el rendimiento está optimizado para funcionar en móviles de gama baja, asegurando que cualquier miembro de una asociación pueda usarlo sin problemas.
+
+      EZPOS fue utilizado por asociaciones reales en contextos prácticos, como ferias y torneos, donde se gestionaron más de 100 productos y más de 500 ventas en tiempo real, sin errores. Todo fue registrado localmente, sincronizado manualmente y exportado con éxito al finalizar los eventos.
+
+      Está preparado para evolucionar a versiones conectadas en red, con sincronización en la nube y login por roles. Pero incluso en su forma actual, demuestra una arquitectura sólida y una visión clara: empoderar a pequeños colectivos con herramientas profesionales.
+    `,
+    technologies: ['Java', 'Android Studio', 'SQLite', 'GitHub', 'M-V-VM'],
+    images: [
+      '/assets/ezpos_screenshot1.png',
+      '/assets/ezpos_screenshot2.png',
+      '/assets/ezpos_screenshot3.png',
+      '/assets/ezpos_screenshot4.png',
+      '/assets/ezpos_screenshot5.png',
+      '/assets/ezpos_screenshot6.png',
+      '/assets/ezpos_screenshot7.png',
+      '/assets/ezpos_screenshot8.png',
+      '/assets/ezpos_screenshot9.png',
+      '/assets/ezpos_screenshot10.png',
+    ],
+    video: '/assets/ezpos_demo.mp4',
+    apk: '/downloads/EZPOS.apk'
   },
   {
     id: 3,

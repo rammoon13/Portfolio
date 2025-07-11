@@ -4,7 +4,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #222, 0.8;
   color: #fff;
   position: sticky;
   top: 0;
@@ -20,7 +19,7 @@
 .navbar-links a {
   color: #fff;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.4s ease;
 }
 
 .navbar-links a:hover {

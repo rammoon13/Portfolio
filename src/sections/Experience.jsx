@@ -1,7 +1,7 @@
 import experiences from '../data/experiences.js'
 import '../styles/experience.css'
 
-// Cronolog\u00eda de mi experiencia profesional
+// Cronología de mi experiencia profesional
 function Experience() {
   return (
     <section id="experience" className="experience">
