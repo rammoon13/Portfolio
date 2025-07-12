@@ -1,34 +1,94 @@
-/* Styles for the fixed navigation bar */
+/* Estilos para el navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
   position: sticky;
   top: 0;
   z-index: 1000;
+  backdrop-filter: blur(6px);
 }
 
+/* Título opcional */
+.navbar-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Lista de enlaces */
 .navbar-links {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
 }
 
 .navbar-links a {
   color: #fff;
   text-decoration: none;
+  font-weight: 500;
   transition: color 0.4s ease;
 }
 
 .navbar-links a:hover {
-  color: #ff9800;
+  color: #00ffff;
 }
 
-/* Responsive menu adjustments */
-@media (max-width: 600px) {
+/* Botón hamburguesa (oculto en escritorio) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background: #fff;
+  height: 3px;
+  width: 100%;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Versión abierta */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive para móvil */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
   .navbar-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
     flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links.active {
+    display: flex;
   }
 }
